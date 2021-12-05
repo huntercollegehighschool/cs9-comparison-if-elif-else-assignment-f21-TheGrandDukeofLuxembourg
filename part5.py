@@ -24,9 +24,11 @@ not a month
 
 #start writing your code below
 month=str(input("Enter a month: "))
-if(month=="January" or month=="March" or month=="May" or month=="July" or month=="May" or month=="July" or month=="August" or month=="October" or month=="December" ):
+list31=["January", "March", "May", "July", "August", "October", "December"]
+list30=["September","April","June","November"]
+if (month in list31):
   print("31")
-elif(month=="September"or month=="April" or month=="June" or month=="November"):
+elif(month in list30):
   print("30")
 elif(month=="February"):
   print("28 or 29")
